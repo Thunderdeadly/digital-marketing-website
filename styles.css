@@ -161,8 +161,15 @@ h1 em, h2 em { font-style: normal; color: var(--accent); }
   display: grid; place-items: center;
   background: var(--accent-soft);
   border-radius: 12px;
-  font-size: 1.4rem;
   margin-bottom: 1.1rem;
+}
+.card-icon svg {
+  width: 24px; height: 24px;
+  stroke: var(--accent);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* ============ Process steps ============ */
