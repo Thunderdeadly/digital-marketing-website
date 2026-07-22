@@ -102,39 +102,9 @@ h1 em, h2 em { font-style: normal; color: var(--accent); }
   background: radial-gradient(circle, rgba(255,107,61,0.14), transparent 60%);
   pointer-events: none;
 }
-.hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; position: relative; }
+.hero-inner { position: relative; }
+.hero-copy { max-width: 46rem; }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
-
-.chart-card {
-  background: var(--card);
-  border: 1px solid var(--card-edge);
-  border-radius: var(--radius);
-  padding: 1.25rem;
-  position: relative;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
-  transform: rotate(1.5deg);
-}
-.chart-card-head { display: flex; align-items: center; gap: 6px; margin-bottom: 1rem; }
-.chart-card-head .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--card-edge); }
-.chart-card-head em { margin-left: auto; font-size: 0.8rem; color: var(--muted); font-style: normal; }
-.chart-bars rect { fill: var(--accent-soft); stroke: none; rx: 4; }
-.chart-line { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-.chart-badge {
-  position: absolute;
-  bottom: -14px; right: 18px;
-  background: var(--accent-2);
-  color: #1d1608;
-  font-weight: 700;
-  font-size: 0.85rem;
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
-}
-
-/* ============ Trust bar ============ */
-.trustbar { padding: 2.5rem 0; border-block: 1px solid var(--card-edge); }
-.trustbar p { text-align: center; color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 1.25rem; }
-.trust-logos { display: flex; justify-content: center; gap: clamp(1.5rem, 4vw, 3.5rem); flex-wrap: wrap; }
-.trust-logos span { font-family: var(--font-head); font-weight: 700; color: var(--muted); opacity: 0.7; letter-spacing: 0.04em; }
 
 /* ============ Sections & cards ============ */
 .section { padding: clamp(4rem, 8vw, 6rem) 0; }
@@ -248,8 +218,6 @@ h1 em, h2 em { font-style: normal; color: var(--accent); }
 
 /* ============ Responsive ============ */
 @media (max-width: 900px) {
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-visual { max-width: 420px; }
   .grid-3 { grid-template-columns: 1fr 1fr; }
   .steps { grid-template-columns: 1fr 1fr; }
   .contact-inner { grid-template-columns: 1fr; }
